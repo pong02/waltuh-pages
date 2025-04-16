@@ -81,7 +81,9 @@
         price: parseFloat(document.getElementById('price').value),
         stamp_config_id: document.getElementById('stamp_config_id').value
       };
-
+      
+      alert("Form submitted. Sending to Telegram..."); // TEMP
+      
       tg.sendData(JSON.stringify(formData)); // send back to bot
       tg.close(); // optional: auto close the modal
     });
